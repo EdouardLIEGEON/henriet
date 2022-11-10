@@ -1,0 +1,66 @@
+@charset "UTF-8";
+/*
+Theme Name: henriet
+Author: Edouard Sequane
+Description: henriet électricité
+Version: 1.0
+*/
+nav.navbar {
+  margin: 1rem 10rem;
+}
+nav.navbar .navbar-toggler {
+  background: red;
+  border-radius: 50%;
+  padding: 0.2rem;
+}
+nav.navbar .navbar-toggler .navbar-toggler-icon {
+  background-size: 75%;
+}
+nav.navbar .offcanvas.offcanvas-end {
+  width: 33%;
+  background: rgb(61, 61, 61);
+  padding-top: 1rem;
+}
+nav.navbar .offcanvas-backdrop {
+  background-color: #fff;
+}
+nav.navbar .offcanvas-body {
+  margin-top: 5rem;
+}
+nav.navbar .offcanvas-header {
+  padding-left: 75%;
+  padding-top: 3rem;
+}
+nav.navbar .offcanvas-header .btn-close {
+  background: #fff;
+  border-radius: 50%;
+}
+nav.navbar .nav-link {
+  font-size: 3rem;
+  padding: 0.5rem 25%;
+  color: #fff;
+}
+nav.navbar .nav-link.active {
+  color: #fff;
+}
+nav.navbar .dropdown-menu {
+  border: none;
+  background: rgb(61, 61, 61);
+}
+nav.navbar .dropdown-menu .dropdown-item {
+  font-size: 1.5rem;
+  padding: 0.5rem 25%;
+  color: #fff;
+}
+
+header {
+  height: 80vh;
+  background: beige;
+  margin-top: -10rem;
+  padding: 10rem;
+}
+header h1 {
+  font-size: 8rem;
+  color: red;
+  margin-top: 15%;
+}/*# sourceMappingURL=style.css.map */

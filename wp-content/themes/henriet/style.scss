@@ -1,0 +1,67 @@
+/*
+Theme Name: henriet
+Author: Edouard Sequane
+Description: henriet électricité
+Version: 1.0
+*/
+nav.navbar{
+    margin: 1rem 10rem;
+
+    .navbar-toggler{
+    background:red;
+    border-radius: 50%;
+    padding:0.2rem;
+    .navbar-toggler-icon{
+        background-size:75%;
+    }
+    }
+    .offcanvas.offcanvas-end{
+        width:33%;
+        background: rgb(61, 61, 61);
+        padding-top:1rem;
+
+    }
+    .offcanvas-backdrop{
+        background-color:#fff;
+    }
+    .offcanvas-body{
+        margin-top:5rem;
+    }
+    .offcanvas-header{
+                padding-left:75%; 
+                padding-top:3rem;      
+                .btn-close{
+            background: #fff;
+            border-radius: 50%;
+        }
+    }
+    .nav-link{
+        font-size:3rem;
+        padding:0.5rem 25%;
+        color: #fff;
+    }
+    .nav-link.active{
+        color: #fff;
+    }
+    .dropdown-menu{
+        border:none;
+        background:rgb(61, 61, 61);
+        .dropdown-item{
+            font-size:1.5rem;
+            padding: 0.5rem 25%;
+            color: #fff;
+        }
+
+    }
+}
+header{
+    height:80vh;
+    background: beige;
+    margin-top: -10rem;
+    padding: 10rem;
+    h1{
+        font-size:8rem;
+        color:red;
+        margin-top: 15%;
+    }
+}
