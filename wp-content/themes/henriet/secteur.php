@@ -2,7 +2,7 @@
 /**
  * @package WordPress
  * @subpackage henriet
- * Template Name: industrie
+ * Template Name: secteur
  * 
  */
 

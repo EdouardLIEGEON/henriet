@@ -5,6 +5,7 @@ Author: Edouard Sequane
 Description: henriet électricité
 Version: 1.0
 */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 nav.navbar {
   margin: 1rem 10rem;
 }
@@ -63,4 +64,169 @@ header h1 {
   font-size: 8rem;
   color: red;
   margin-top: 15%;
+}
+
+footer {
+  background: #03224c;
+  padding: 4rem;
+}
+footer .container-fluid {
+  width: 1500px;
+}
+footer h2 {
+  color: red;
+}
+footer h3 {
+  color: #fff;
+}
+footer li {
+  list-style-type: none;
+  margin-left: -2rem;
+}
+footer p {
+  color: #fff;
+}
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+footer a:hover {
+  color: red;
+}
+footer .colonne3, footer .rgpd {
+  margin-top: 3rem;
+}
+footer .rgpd p {
+  text-align: right;
+}
+footer .rgpd a {
+  color: grey;
+}
+
+.btn {
+  padding: 1rem 2rem;
+}
+.btn a {
+  text-decoration: none;
+}
+
+#presentation {
+  padding: 5rem;
+}
+#presentation .container-grey {
+  background: grey;
+  padding: 2rem;
+}
+#presentation .container-grey p {
+  color: #fff;
+}
+
+#secteurs .container-red {
+  background: red;
+  padding: 20rem 5rem 5rem 5rem;
+}
+#secteurs .container-red HR {
+  color: #fff;
+}
+#secteurs .container-red h2 {
+  color: #fff;
+}
+#secteurs .container-red p {
+  color: #fff;
+}
+
+#atouts .btn {
+  border: solid 1px red;
+  background: red;
+  border-radius: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#atouts .btn:hover {
+  border: solid 1px red;
+  background: #fff;
+}
+#atouts .btn:hover a {
+  color: red;
+}
+#atouts .btn a {
+  color: #fff;
+}
+
+#reassurance {
+  background: red;
+  padding: 5rem;
+}
+#reassurance h2 {
+  color: #fff;
+}
+#reassurance .btn {
+  border: solid 1px #fff;
+  background: #fff;
+  border-radius: 0;
+}
+#reassurance .btn:hover {
+  border: solid 1px #fff;
+  background: red;
+}
+#reassurance .btn:hover a {
+  color: #fff;
+}
+#reassurance .btn a {
+  color: red;
+}
+
+/* Signature SQ */
+@font-face {
+  font-family: "Monologue-Sequane";
+  src: url("https://sequan-e.com/signature/Monologue-Sequane.ttf") format("truetype"), url("https://sequan-e.com/signature/Monologue-Sequane.eot?#iefix") format("embedded-opentype"), url("https://sequan-e.com/signature/Monologue-Sequane.woff") format("woff"), url("https://sequan-e.com/signature/Monologue-Sequane.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+.signature {
+  height: 26px;
+  overflow: hidden;
+  margin: 0;
+  position: relative;
+  margin-top: -1rem;
+}
+
+.signature p {
+  font-size: 26px;
+  line-height: 26px;
+  letter-spacing: -4.5px;
+  font-family: "Monologue-Sequane", sans-serif;
+  margin: 0;
+  position: relative;
+}
+
+.signature p a {
+  color: grey;
+  font: inherit;
+  text-decoration: inherit;
+  position: relative;
+  letter-spacing: inherit;
+  text-transform: inherit;
+}
+
+.signature p .site {
+  letter-spacing: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  position: relative;
+  top: -5px;
+}
+
+.signature p .relever {
+  position: relative;
+  top: 26px;
+  transition: all 0.3s ease-out;
+  height: 100%;
+}
+
+.signature:hover p .relever,
+.signature:hover p {
+  top: 0;
+  letter-spacing: 0;
 }/*# sourceMappingURL=style.css.map */

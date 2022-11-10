@@ -4,11 +4,12 @@ Author: Edouard Sequane
 Description: henriet électricité
 Version: 1.0
 */
+$color1 : red;
 nav.navbar{
     margin: 1rem 10rem;
 
     .navbar-toggler{
-    background:red;
+    background:$color1;
     border-radius: 50%;
     padding:0.2rem;
     .navbar-toggler-icon{
@@ -61,7 +62,183 @@ header{
     padding: 10rem;
     h1{
         font-size:8rem;
-        color:red;
+        color:$color1;
         margin-top: 15%;
     }
 }
+footer{
+    background: #03224c;
+    padding:  4rem;
+    .container-fluid{
+width:1500px;
+    }
+    h2{
+        color:$color1;
+    }
+    h3{
+        color: #fff;
+    }
+    li{
+        list-style-type: none;
+        margin-left:-2rem;
+    }
+    p{
+        color: #fff;
+    }
+    a{
+        color: #fff;
+        text-decoration:none;
+        &:hover{
+            color: $color1;
+        }
+    }
+    .colonne3, .rgpd{
+        margin-top:3rem;
+    }
+    .rgpd{
+        p{
+        text-align:right;
+        }
+        a{
+            color:grey;
+        }
+    }
+}
+.btn{
+    padding: 1rem 2rem;
+    a{
+        text-decoration:none;
+    }
+}
+#presentation{
+    padding: 5rem;
+    .container-grey{
+        background: grey;
+        padding: 2rem;
+        p{
+            color: #fff;
+        }
+    }
+}
+#secteurs{
+    .container-red{
+        background: $color1;
+        padding: 20rem 5rem 5rem 5rem;
+        HR{
+            color: #fff;
+        }
+        h2{
+            color: #fff;
+        }
+        p{
+            color: #fff;
+        }
+    }
+}
+#atouts{
+    .btn{
+        border:solid 1px $color1;
+        background: $color1;
+        border-radius:0;
+        display:block;
+        margin-left:auto;
+        margin-right:auto;
+        &:hover{
+        border:solid 1px $color1;
+        background: #fff;
+        a{
+            color: $color1;
+        }
+        }
+        a{
+            color:#fff;
+        }
+    }
+}
+#reassurance{
+    background: $color1;
+    padding: 5rem;
+    h2{
+        color: #fff;
+    }
+    .btn{
+        border: solid 1px #fff;
+        background: #fff;
+        border-radius:0;
+        &:hover{
+            border:solid 1px #fff;
+            background: $color1;
+            a{
+                color: #fff;
+            }
+        }  
+        a{
+            color: $color1;
+        }
+    }
+}
+
+/* Signature SQ */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+@font-face {
+  font-family: "Monologue-Sequane";
+  src: url("https://sequan-e.com/signature/Monologue-Sequane.ttf")
+      format("truetype"),
+    url("https://sequan-e.com/signature/Monologue-Sequane.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://sequan-e.com/signature/Monologue-Sequane.woff") format("woff"),
+    url("https://sequan-e.com/signature/Monologue-Sequane.woff2")
+      format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.signature {
+  height: 26px;
+  overflow: hidden;
+  margin: 0;
+  position: relative;
+  margin-top: -1rem;
+}
+
+.signature p {
+  font-size: 26px;
+  line-height: 26px;
+  letter-spacing: -4.5px;
+  font-family: "Monologue-Sequane", sans-serif;
+  margin: 0;
+  position: relative;
+}
+
+.signature p a {
+  color: grey;
+  font: inherit;
+  text-decoration: inherit;
+  position: relative;
+  letter-spacing: inherit;
+  text-transform: inherit;
+}
+
+.signature p .site {
+  letter-spacing: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  position: relative;
+  top: -5px;
+}
+
+.signature p .relever {
+  position: relative;
+  top: 26px;
+  transition: all 0.3s ease-out;
+  height: 100%;
+}
+
+.signature:hover p .relever,
+.signature:hover p {
+  top: 0;
+  letter-spacing: 0;
+}
+
