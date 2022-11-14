@@ -6,11 +6,24 @@ Description: henriet électricité
 Version: 1.0
 */
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@font-face {
+  font-family: "Dancingscript";
+  src: url("fonts/DancingScript/DancingScript-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Figtree";
+  src: url("fonts/Figtree/Figtree-Regular.ttf") format("truetype");
+}
+p {
+  font-family: "Figtree", sans-serif;
+  font-size: 1.125rem;
+}
+
 nav.navbar {
-  margin: 1rem 10rem;
+  margin: 1.875rem 11.5rem 0 17.375rem;
 }
 nav.navbar .navbar-toggler {
-  background: red;
+  background: #D12D2D;
   border-radius: 50%;
   padding: 0.2rem;
 }
@@ -19,11 +32,12 @@ nav.navbar .navbar-toggler .navbar-toggler-icon {
 }
 nav.navbar .offcanvas.offcanvas-end {
   width: 33%;
-  background: rgb(61, 61, 61);
+  background: #57626F;
   padding-top: 1rem;
 }
 nav.navbar .offcanvas-backdrop {
-  background-color: #fff;
+  background: url("http://localhost/henriet/wp-content/uploads/2022/11/logo_henriet.png");
+  opacity: 1;
 }
 nav.navbar .offcanvas-body {
   margin-top: 5rem;
@@ -37,47 +51,72 @@ nav.navbar .offcanvas-header .btn-close {
   border-radius: 50%;
 }
 nav.navbar .nav-link {
-  font-size: 3rem;
-  padding: 0.5rem 25%;
+  font-size: 2.187rem;
+  font-family: "Figtree", sans-serif;
+  line-height: 2.937rem;
+  font-weight: lighter;
+  padding: 1rem 25%;
   color: #fff;
+}
+nav.navbar .nav-link:hover {
+  color: #D12D2D;
 }
 nav.navbar .nav-link.active {
   color: #fff;
 }
 nav.navbar .dropdown-menu {
   border: none;
-  background: rgb(61, 61, 61);
+  background: #57626F;
 }
 nav.navbar .dropdown-menu .dropdown-item {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   padding: 0.5rem 25%;
+  font-family: "Figtree", sans-serif;
   color: #fff;
+}
+nav.navbar .dropdown-menu .dropdown-item:hover {
+  color: #D12D2D;
+  background: none;
 }
 
 header {
-  height: 80vh;
-  background: beige;
+  height: 65.7vh;
+  background: #F2ECE7;
   margin-top: -10rem;
-  padding: 10rem;
+  padding: 10rem 17.375rem;
+}
+header img {
+  margin-right: 5rem;
 }
 header h1 {
-  font-size: 8rem;
-  color: red;
-  margin-top: 15%;
+  font-size: 6.5625rem;
+  color: #D12D2D;
+  margin-top: 20%;
+  font-family: "Figtree", sans-serif;
+}
+header h2 {
+  font-size: 1.875rem;
+  font-weight: 500;
+  font-family: "Figtree", sans-serif;
+  color: #57626F;
 }
 
 footer {
-  background: #03224c;
-  padding: 4rem;
+  background: #15273D;
+  padding: 6rem 17.375rem 8.125rem 17.375rem;
 }
 footer .container-fluid {
   width: 1500px;
 }
 footer h2 {
-  color: red;
+  color: #D12D2D;
+  font-size: 1.375rem;
+  font-family: "Figtree", sans-serif;
 }
 footer h3 {
   color: #fff;
+  font-size: 1.375rem;
+  font-family: "Figtree", sans-serif;
 }
 footer li {
   list-style-type: none;
@@ -85,22 +124,27 @@ footer li {
 }
 footer p {
   color: #fff;
+  font-family: "Figtree", sans-serif;
+  font-size: 1.125rem;
 }
 footer a {
   color: #fff;
   text-decoration: none;
+  font-family: "Figtree", sans-serif;
+  font-size: 1.125rem;
 }
 footer a:hover {
-  color: red;
+  color: #D12D2D;
 }
 footer .colonne3, footer .rgpd {
-  margin-top: 3rem;
+  margin-top: 2.2rem;
 }
 footer .rgpd p {
   text-align: right;
 }
 footer .rgpd a {
-  color: grey;
+  color: #F2ECE7;
+  opacity: 50%;
 }
 
 .btn {
@@ -111,10 +155,13 @@ footer .rgpd a {
 }
 
 #presentation {
-  padding: 5rem;
+  padding: 6.875rem 17.375rem;
+}
+#presentation .big_p {
+  font-size: 1.5rem;
 }
 #presentation .container-grey {
-  background: grey;
+  background: #57626F;
   padding: 2rem;
 }
 #presentation .container-grey p {
@@ -122,59 +169,117 @@ footer .rgpd a {
 }
 
 #secteurs .container-red {
-  background: red;
-  padding: 20rem 5rem 5rem 5rem;
+  background: #D12D2D;
+  background-image: url("http://localhost/henriet/wp-content/uploads/2022/11/logo_henriet.png");
+  padding: 20rem 4.81rem 4.81rem 4.81rem;
+  margin-bottom: -13.062rem;
 }
 #secteurs .container-red HR {
   color: #fff;
 }
 #secteurs .container-red h2 {
   color: #fff;
+  font-family: "Figtree", sans-serif;
+  font-size: 5rem;
+  line-height: 5rem;
 }
 #secteurs .container-red p {
   color: #fff;
+  font-size: 2.187rem;
+  font-family: "Figtree", sans-serif;
+  font-weight: 100;
 }
 
+#atouts {
+  padding: 20.312rem 17.375rem 7.5rem 17.375rem;
+  background: #F2ECE7;
+}
+#atouts .col_atouts {
+  vertical-align: middle;
+}
+#atouts img {
+  padding-bottom: 15%;
+  display: block;
+  margin: auto;
+}
+#atouts .img_atouts1 {
+  padding-bottom: 9.5%;
+}
+#atouts p {
+  text-align: center;
+}
 #atouts .btn {
-  border: solid 1px red;
-  background: red;
+  border: solid 1px #D12D2D;
+  background: #D12D2D;
   border-radius: 0;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 3.875rem;
+  padding: 1rem 2rem;
 }
 #atouts .btn:hover {
-  border: solid 1px red;
+  border: solid 1px #D12D2D;
   background: #fff;
 }
 #atouts .btn:hover a {
-  color: red;
+  color: #D12D2D;
 }
 #atouts .btn a {
   color: #fff;
 }
+#atouts h2 {
+  text-align: center;
+  padding-bottom: 3.75rem;
+  font-size: 3.125rem;
+  color: #57626F;
+  font-weight: 500;
+}
+
+#clients {
+  padding: 7.5rem 17.375rem 6.25rem 17.375rem;
+}
+#clients h2 {
+  color: #57626F;
+  font-family: "Figtree", sans-serif;
+  font-size: 5rem;
+  line-height: 5rem;
+}
+#clients p {
+  color: #57626F;
+  font-size: 2.187rem;
+  font-family: "Figtree", sans-serif;
+  font-weight: 100;
+  padding-top: 6.56rem;
+}
 
 #reassurance {
-  background: red;
-  padding: 5rem;
+  background: #D12D2D;
+  padding: 3.56rem 17.375rem;
 }
 #reassurance h2 {
   color: #fff;
+  font-family: "Figtree", sans-serif;
+  font-size: 2.5rem;
+  text-align: left;
 }
 #reassurance .btn {
   border: solid 1px #fff;
   background: #fff;
   border-radius: 0;
+  padding: 0.5rem 3.5rem;
 }
 #reassurance .btn:hover {
   border: solid 1px #fff;
-  background: red;
+  background: #D12D2D;
 }
 #reassurance .btn:hover a {
   color: #fff;
 }
 #reassurance .btn a {
-  color: red;
+  color: #D12D2D;
+  font-family: "Figtree", sans-serif;
+  font-size: 1.25rem;
 }
 
 /* Signature SQ */
@@ -202,7 +307,8 @@ footer .rgpd a {
 }
 
 .signature p a {
-  color: grey;
+  color: #F2ECE7;
+  opacity: 50%;
   font: inherit;
   text-decoration: inherit;
   position: relative;

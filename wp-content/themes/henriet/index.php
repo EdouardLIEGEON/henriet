@@ -7,79 +7,110 @@
  */
 
 get_header() ?>
-<header>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-10">
-                <h1>Électricité Henriet</h1>
-                <h2>Expérience et savoir-faire pour les particuliers et les professionnels</h2>
+    <header>
+        <section class="container">
+            <div class="row">
+                <div class="col-md-9">
+                    <h1>Électricité Henriet</h1>
+                    <h2>Expérience et savoir-faire pour les particuliers et les professionnels</h2>
+                </div>
+                <div class="col-md-1">
+                    <img src="http://localhost/henriet/wp-content/uploads/2022/11/logo_henriet.png" alt="logo henriet">
+                </div>
             </div>
-            <div class="col-md-2">
-                <img src="" alt="">
+    </section>
+    </header>
+    <body>
+        <section id="presentation">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="big_p">Basée à Levier, <b>l’entreprise Électricité Henriet</b> propose ses services en électricité générale depuis plus de 15 ans entre Doubs et Jura (Mouthe, Pontarlier, Salins-les-Bains…).</p><br>
+                                <p>Spécialisés dans les <b>installations électriques</b> des habitations, mais aussi des locaux et bureaux d’entreprises, nous avons développé des savoir-faire précis pour répondre aux 
+                                besoins des particuliers et des professionnels qui nous ont fait confiance au fil des années.</p>
+                    </div>
+                    <div class="col-md-4 offset-2 container-grey">
+                        <p>Éclairage LED décoratif, domotique, chauffage, système de secours, installation agricole… réactive et force de proposition, notre équipe saura imaginer les solutions correspondant 
+                            à vos envies ou aux exigences de votre secteur d’activité.</p>
+                    </div>
+                    <div></div>
+                </div>
             </div>
-        </div>
-    </div>
-</header>
-<section id="presentation">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8">
+        </section>
+        <section id="secteurs">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 container-red">
+                        <h2>Nos services</h2>
+                        <p>pour chacun de vos besoins</p>
+                        <HR>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="row">
+                            <div class="col-md-6">
+                            <img src="http://localhost/henriet/wp-content/uploads/2022/11/logo_henriet.png" alt="logo henriet">
+                            </div>
+                            <div class="col-md-6">
+                            <img src="http://localhost/henriet/wp-content/uploads/2022/11/logo_henriet.png" alt="logo henriet">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                            <img src="http://localhost/henriet/wp-content/uploads/2022/11/logo_henriet.png" alt="logo henriet">
+                            </div>
+                            <div class="col-md-6">
+                            <img src="http://localhost/henriet/wp-content/uploads/2022/11/logo_henriet.png" alt="logo henriet">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-4 container-grey">
-                <p>eclairage</p>
+        </section>
+        <section id="atouts">
+            <div class="container">
+                <h2>Nos atouts</h2>
+                <div class="row">
+                    <div class="col-md-4 col_atouts">
+                        <img class="img_atouts1" src="http://localhost/henriet/wp-content/uploads/2022/11/Groupe-38.png"  alt="">
+                        <p>+ de 15 ans<br>d’expérience</p>
+                    </div>
+                    <div class="col-md-4 col_atouts">
+                        <img src="http://localhost/henriet/wp-content/uploads/2022/11/Groupe-39.png"  alt="">
+                        <p>Qualité et rapidité<br>d’intervention</p>
+                    </div>
+                    <div class="col-md-4 col_atouts">
+                        <img src="http://localhost/henriet/wp-content/uploads/2022/11/Groupe-41.png"  alt="">
+                        <p>Une entreprise<br>de proximité</p>
+                    </div>
+                </div>
             </div>
-            <div></div>
-        </div>
-    </div>
-</section>
-<section id="secteurs">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4 container-red">
-                <h2>Nos services</h2>
-                <p>pour chacun de vos besoins</p>
-                <HR>
+            <button class="btn"><a href="/henriet/societe/">Découvrir l'entreprise</a></button>
+        </section>
+        <section id="clients">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h2>Nos clients</h2>
+                        <p>témoignent</p>
+                    </div>
+                    <div class="col-md-8">
+                        <p></p>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-2"></div>
-            <div class="col-md-2"></div>
-            <div></div>
-        </div>
-    </div>
-</section>
-<section id="atouts">
-    <div class="container-fluid">
-        <h2>Nos atouts</h2>
-        <div class="row">
-            <div class="col-md-4"></div>
-            <div class="col-md-4"></div>
-            <div class="col-md-4"></div>
-        </div>
-    </div>
-    <button class="btn"><a href="/henriet/societe">Découvrir l'entreprise</a></button>
-</section>
-<section id="clients">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-4">
-                <h2>Nos clients</h2>
-                <p>témoignent</p>
+        </section>
+        <section id="reassurance">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 offset-3 d-flex align-middle">
+                        <h2>Un projet ?</h2>
+                    </div>
+                    <div class="col-md-3 d-flex align-middle">
+                        <button class="btn"><a href="/henriet/contact/">Contactez-nous</a></button>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-8">
-                <p></p>
-            </div>
-        </div>
-    </div>
-</section>
-<section id="reassurance">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-2 offset-4 d-flex align-middle">
-                <h2>Un projet ?</h2>
-            </div>
-            <div class="col-md-2 d-flex align-middle">
-                <button class="btn"><a href="/henriet/contact">Contactez-nous</a></button>
-            </div>
-        </div>
-    </div>
-</section>
-<?php get_footer(); ?>
+        </section>
+        <?php get_footer(); ?>
+    </body>
+</html>
