@@ -24,6 +24,9 @@ p{
     font-family: $font2;
     font-size:1.125rem;
 }
+html{
+    overflow-x: hidden;
+}
 nav.navbar{
     margin: 1.875rem 11.5rem 0 17.375rem ;
 
@@ -39,10 +42,9 @@ nav.navbar{
         width:33%;
         background: $color2;
         padding-top:1rem;
-
     }
     .offcanvas-backdrop{
-        background: url('http://localhost/henriet/wp-content/uploads/2022/11/logo_henriet.png');
+        background: url('');
         opacity:1;
     }
     .offcanvas-body{
@@ -78,6 +80,7 @@ nav.navbar{
             padding: 0.5rem 25%;
             font-family: $font2;
             color: #fff;
+            font-weight:lighter;
             &:hover{
                 color: $color1;
                 background:none;
@@ -86,6 +89,8 @@ nav.navbar{
 
     }
 }
+
+/* Accueil */
 header{
     height:65.7vh;
     background: $color3;
@@ -174,11 +179,13 @@ width:1500px;
     }
 }
 #secteurs{
+    .secteurs{
+        margin-bottom: -13.062rem;
+    }
     .container-red{
         background: $color1;
         background-image: url('http://localhost/henriet/wp-content/uploads/2022/11/logo_henriet.png');
         padding: 20rem 4.81rem 4.81rem 4.81rem;
-        margin-bottom: -13.062rem;
         HR{
             color: #fff;
         }
@@ -194,6 +201,9 @@ width:1500px;
             font-family: $font2;
             font-weight: 100;
         }
+    }
+    img{
+        height:350px;
     }
 }
 #atouts{
@@ -243,19 +253,27 @@ width:1500px;
     }
 }
 #clients{
-    padding: 7.5rem 17.375rem 6.25rem 17.375rem;
+    padding: 7.5rem 17.375rem 2.37rem 17.375rem;
     h2{
         color: $color2;
         font-family: $font2;
         font-size: 5rem;
         line-height: 5rem;
     }
-    p{
+    h3{
         color: $color2;
         font-size: 2.187rem;
         font-family: $font2;
         font-weight: 100;
         padding-top: 6.56rem;
+    }
+    .temoignage{
+        padding: 0 0 3.875rem 0;
+        p{
+        color: $color2;
+        font-size: 1.1rem;
+        font-family: $font2;
+        }
     }
 }
 #reassurance{
@@ -272,6 +290,10 @@ width:1500px;
         background: #fff;
         border-radius:0;
         padding:0.5rem 3.5rem;
+        display: block;
+        margin:3rem 0 0 0;
+        margin-left: auto;
+        margin-right: auto;
         &:hover{
             border:solid 1px #fff;
             background: $color1;
@@ -284,6 +306,173 @@ width:1500px;
             font-family: $font2;
             font-size:1.25rem;
         }
+    }
+}
+
+
+/* Responsive */
+
+@media (max-width:1700px){
+    nav.navbar{
+        margin: 1.875rem 4rem 0 4rem ;
+        .nav-link{
+            font-size:2rem;
+            padding:0.5rem 15%;
+        }
+        .dropdown-item{
+            font-size:1.25rem;
+            padding: 0 0;
+        }
+        .offcanvas-body{
+            margin-top:2rem;
+        }
+    }
+    header{
+        height:60vh;
+        padding: 10rem 4rem;
+
+        img{
+            margin-right:0;
+            width:300px;
+        }
+        h1{
+            font-size : 5rem;
+            margin-top: 15%;
+        }
+        h2{
+            font-size: 1.5rem;
+        }
+    }
+    footer{
+        padding:  6rem 4rem;
+    }
+    #presentation, #secteurs,  #clients{
+        padding: 6rem 4rem;
+    }
+    #secteurs{
+        .container-red{
+        padding: 20rem 2rem 2rem 2rem;
+            h2{
+            font-size:3rem;
+            }
+            p{
+                font-size:1.5rem;
+            }
+        }
+        img{
+            height: 300px;
+        }
+    }
+    #atouts{
+        padding:15rem 4rem 6rem 4rem;
+    }
+    #reassurance{
+        padding: 3rem 4rem;
+    }
+}
+
+@media (max-width:900px){
+    nav.navbar{
+        margin: 1.875rem 2rem 0 2rem ;
+        .offcanvas.offcanvas-end{
+            width:50%;
+        }
+    }
+    header{
+        height:60vh;
+        padding: 20rem 2rem;
+        img{
+            margin-right:0;
+            margin-top:7.5rem;
+            width:250px;
+        }
+    }
+    footer{
+        padding:  6rem 2rem;
+        p,a, h2, h3, li, .rgpd p{
+            text-align:center;
+        }
+        h3{
+            padding-top:2rem;
+        }
+    }
+    #presentation, #secteurs,  #clients{
+        padding: 6rem 2rem;
+    }
+    #secteurs{
+        .container-red{
+        padding: 5rem 2rem 2rem 2rem;
+        margin-bottom: 5rem;
+        }
+        img{
+            height: 300px;
+        }
+    }
+    #atouts{
+        padding:15rem 2rem 6rem 2rem;
+    }
+    #reassurance{
+        padding: 3rem 2rem;
+        h2{
+            text-align: center;
+        }
+    }
+}
+@media (max-width:500px){
+    nav.navbar{
+        margin: 1.875rem 2rem 0 2rem ;
+        .offcanvas.offcanvas-end{
+            width:100%;
+        }
+    }
+    header{
+        height:60vh;
+        padding: 20rem 2rem;
+        h1{
+            font-size: 4rem;
+        }
+        img{
+           display:none;
+        }
+    }
+    footer{
+        padding:  6rem 2rem;
+        p,a, h2, h3, li, .rgpd p{
+            text-align:center;
+        }
+        h3{
+            padding-top:2rem;
+        }
+    }
+    #presentation, #secteurs,  #clients{
+        padding: 6rem 2rem;
+    }
+    #secteurs{
+        .container-red{
+        padding: 5rem 2rem 2rem 2rem;
+        margin-bottom: 5rem;
+        }
+        img{
+            height: 300px;
+        }
+    }
+    #atouts{
+        padding:15rem 2rem 6rem 2rem;
+    }
+    #reassurance{
+        padding: 3rem 2rem;
+        h2{
+            text-align: center;
+        }
+    }
+}
+
+/* Page Societe */
+
+#societe{
+    background: #fff;
+    h1{
+        font-size:5rem;
     }
 }
 
